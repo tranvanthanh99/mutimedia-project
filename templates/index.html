@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Page Content goes here -->
+        <h1>Upload An Image</h1>
+        <form id="submit-form" method=post enctype=multipart/form-data>
+            <div class="row">
+                <div class="file-field input-field col s6">
+                    <div class="btn">
+                        <span>File</span>
+                        <input id="fileUpload" type=file name=file>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+                <div class="input-field col s6">
+                    <select id="algo">
+                        <option value="1">Gaussian filter</option>
+                        <option value="2">Sobel edge detection</option>
+                        <!-- <option value="3">Option 3</option> -->
+                    </select>
+                    <label>Choose algorithm</label>
+                </div>
+                <div style="text-align: center;">
+                    <input class="btn" id="upload" type=submit value=Run>
+                </div>
+            </div>
+        </form>
+        <div class="row" style="margin-top: 10px;display: flex;">
+            <div class="col s5">
+                <div id="image-holder">
+                    <img id="upload-img" class="thumb-image materialboxed" src="" alt="">
+                </div>
+            </div>
+            <div class="col s2" style="display: flex;justify-content: center;align-items: center;">
+                <i class="large material-icons" style="vertical-align: middle;color: #4db6ac;">arrow_forward</i>
+            </div>
+            <div class="col s5">
+                <div id="output-image-holder">
+                    <img id="output-img" class="thumb-image materialboxed" src="" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

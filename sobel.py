@@ -37,11 +37,10 @@ def run(filename):
     filter = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
 
     image = cv2.imread(filename)
-    image = gaussian_blur(image, 9, verbose=False)
+    image = gaussian_blur(image, 5, verbose=False)
     output_img = sobel_edge_detection(image, filter, verbose=False)
 
-
-    convert_base64(output_img, filename)
+    return convert_base64(output_img, filename)
 
 if __name__ == '__main__':
     filter = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
@@ -51,7 +50,7 @@ if __name__ == '__main__':
     args = vars(ap.parse_args())
 
     image = cv2.imread(args["image"])
-    image = gaussian_blur(image, 9, verbose=True)
+    image = gaussian_blur(image, 5, verbose=True)
     output_img = sobel_edge_detection(image, filter, verbose=True)
 
     convert_base64(output_img, args["image"])

@@ -57,10 +57,10 @@ def convolution(image, kernel, average=False, verbose=False):
 
 def convert_base64(image, filename):
     im = Image.fromarray(image.astype("uint8"))
-    im.save(filename)
+    # im.save(filename)
     print(filename)
     #im.show()  # uncomment to look at the image
     rawBytes = io.BytesIO()
     im.save(rawBytes, "PNG")
     rawBytes.seek(0)  # return to the start of the file
-    # print(base64.b64encode(rawBytes.read()))
+    return base64.b64encode(rawBytes.read()).decode()
