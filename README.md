@@ -88,7 +88,7 @@ This program depends on the following packages:
  - NumPy
  - argparse
 
-run the web on localhost:8000 with:
+Run the web on localhost:8000 with:
 ```bash
 python app.py
 ```
