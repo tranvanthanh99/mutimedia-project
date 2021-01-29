@@ -17,7 +17,7 @@ Gaussian filtering is used to blur images and remove noise and detail.
 
 #### Result
 
-![canny result](https://github.com/adl1995/edge-detectors/blob/master/result-canny.png)
+![canny result](https://github.com/tranvanthanh99/mutimedia-project/blob/master/static/img/gaussian-result.png)
 
 
 #### How to run
@@ -48,7 +48,7 @@ Sobel edge detection is used in image processing and computer vision, particular
 
 #### Result
 
-![canny result](https://github.com/adl1995/edge-detectors/blob/master/result-canny.png)
+![canny result](https://github.com/tranvanthanh99/mutimedia-project/blob/master/static/img/sobel-result.png)
 
 
 #### How to run
@@ -74,7 +74,7 @@ A demo web page for the two algorithm
 
 #### Result
 
-![canny result](https://github.com/adl1995/edge-detectors/blob/master/result-canny.png)
+![canny result](https://github.com/tranvanthanh99/mutimedia-project/blob/master/static/img/demo-result.png)
 
 
 #### How to run
